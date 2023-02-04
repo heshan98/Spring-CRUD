@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
-@RestController
 public class StudentController {
     @Autowired
     StudentService studentService;
@@ -21,7 +20,7 @@ public class StudentController {
         return studentService.createStudent(student);
     }
 //getallStudents
-    @GetMapping(path = "/getStudents")
+    @GetMapping(path = "getStudents")
     public List<Student> getStudents() {
         return studentService.getStudents();
     }
