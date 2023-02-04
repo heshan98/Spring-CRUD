@@ -9,7 +9,7 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     public long id;
-    @Column(name="foodName")
+    @Column(name="studentName")
     public String studentName;
 
     @Column (name="age")
